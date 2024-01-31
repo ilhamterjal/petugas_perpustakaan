@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:dio/dio.dart' as dio;
+import 'package:petugas_perpustakaan_kelas_c/app/modules/book/controllers/book_controller.dart';
 import 'package:petugas_perpustakaan_kelas_c/app/routes/app_pages.dart';
 
 import '../../../data/constant/endpoint.dart';
@@ -14,6 +15,7 @@ class AddBookController extends GetxController {
   final TextEditingController penerbitController = TextEditingController();
   final TextEditingController tahun_terbitController = TextEditingController();
   final loading = false.obs;
+  final BookController _bookController = Get.find();
 
   final count = 0.obs;
 
